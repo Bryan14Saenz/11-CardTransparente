@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url(../Img/Fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main .card {
+  text-align: center;
+  width: 300px;
+  height: 580px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  box-shadow: 0 0 10px #fff;
+}
+.main .card h1 {
+  font-size: 20px;
+  margin: 15px 0px 10px 0px;
+}
+.main .card .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 90px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 1px #fff;
+}
+.main .card .cards:hover {
+  animation-name: scale;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.main .card .cards:hover .card-number {
+  display: block;
+}
+.main .card .cards .card-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.main .card .cards .card-number {
+  display: none;
+}
+.main .card .cards .card-number p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@keyframes scale {
+  0% {
+    cursor: pointer;
+  }
+  100% {
+    transform: translateX(50px);
+    scale: 1.1;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
